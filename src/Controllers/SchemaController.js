@@ -148,6 +148,12 @@ const defaultColumns: { [string]: SchemaFields } = Object.freeze({
     reqId: { type: 'String' },
     expire: { type: 'Date' },
   },
+  _ExportProgress: {
+    objectId: { type: 'String' },
+    id: { type: 'String' },
+    masterKey: { type: 'String' },
+    applicationId: { type: 'String' },
+  },
 });
 
 // fields required for read or write operations on their respective classes.
@@ -174,6 +180,7 @@ const systemClasses = Object.freeze([
   '_JobSchedule',
   '_Audience',
   '_Idempotency',
+  '_ExportProgress',
 ]);
 
 const volatileClasses = Object.freeze([
@@ -185,6 +192,7 @@ const volatileClasses = Object.freeze([
   '_JobSchedule',
   '_Audience',
   '_Idempotency',
+  '_ExportProgress',
 ]);
 
 // Anything that start with role

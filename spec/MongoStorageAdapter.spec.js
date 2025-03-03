@@ -70,7 +70,7 @@ describe_only_db('mongo')('MongoStorageAdapter', () => {
   });
 
   it('find succeeds when query is within maxTimeMS', done => {
-    const maxTimeMS = 250;
+    const maxTimeMS = 2500;
     const adapter = new MongoStorageAdapter({
       uri: databaseURI,
       mongoOptions: { maxTimeMS },

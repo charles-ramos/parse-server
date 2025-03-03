@@ -26,6 +26,7 @@
       "fit_only_node_version": true,
       "it_exclude_dbs": true,
       "fit_exclude_dbs": true,
+      "xit_exclude_dbs": true,
       "describe_only_db": true,
       "fdescribe_only_db": true,
       "describe_only": true,
