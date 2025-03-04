@@ -179,8 +179,7 @@ const systemClasses = Object.freeze([
   '_JobStatus',
   '_JobSchedule',
   '_Audience',
-  '_Idempotency',
-  '_ExportProgress',
+  '_Idempotency'
 ]);
 
 const volatileClasses = Object.freeze([
@@ -192,7 +191,6 @@ const volatileClasses = Object.freeze([
   '_JobSchedule',
   '_Audience',
   '_Idempotency',
-  '_ExportProgress',
 ]);
 
 // Anything that start with role
