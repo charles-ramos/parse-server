@@ -7,12 +7,101 @@
 
 <head>
   <title>Email Verification</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f0f0f0;
+    }
+
+    h1, h2, h3, h4, h5 {
+      display: block;
+      font: inherit;
+      font-family: 'Open Sans', 'Helvetica Neue', Helvetica;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 30px;
+      margin: 0 0 15px 0;
+      padding: 0 0 0 0;
+    }
+
+    .verification-box {
+      text-align: center;
+      padding: 35px 30px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-width: 0px;
+      display: block;
+      font: inherit;
+      font-family: 'Helvetica Neue', Helvetica;
+      font-size: 16px;
+      position: relative;
+    }
+
+    h1, input{
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      margin-top: 10px;
+    }
+
+    .title {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    div.powered-by {
+      margin-top: 35px;
+    }
+
+    .powered-by p {
+      font-size: 12px;
+      color: #999;
+      text-align: left;
+    }
+
+    .powered-by img {
+      height: 55px;
+      margin-top: 5px;
+      position: relative;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      font-size: 16px;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>{{appName}}</h1>
-  <h1>Email verified!</h1>
-  <p>Successfully verified your email for account: {{username}}.</p>
+  <div class="verification-box">
+    <div class="content">
+      <h1 class="title">{{appName}}</h1>
+      <h1>Email verified!</h1>
+      <p>Successfully verified your email for account: <b>{{username}}</b>.</p>
+    </div>
+    <div class="powered-by">
+      <a href="https://www.back4app.com">
+        <img src="https://static.back4app.com/back4app-logo.png" />
+      </a>
+    </div>
+  </div>  
 </body>
 
 </html>
